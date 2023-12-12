@@ -42,6 +42,7 @@
     margin-bottom: 30vh;
     font-size: 1.1rem;
 }
+
 @media (max-width: 800px){
     .slkll__inner {
         flex-direction: column;
