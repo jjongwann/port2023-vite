@@ -6,11 +6,12 @@
     <meta name="description" content="한가지 사이트를 다양한 프레임워크를 통해 만들어 보는 포트폴리오 사이트입니다."/>
     <meta name="keyword" content="포트폴리오, 리액트, 뷰, 넥스트, 웹스토리보이, portfolio, react.js, vue.js, next.js, webstoryboy" />
     <title>Jong's 포트폴리오 사이트 😇 Vite-Site</title>
-
     <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg" />
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+    <span class="loader"></span>
+    <div id="contents" style="display: none;">
     <div id="skip">
         <a href="#header">헤더 영역 바로가기</a>
         <a href="#intro">소개 영역 바로가기</a>
@@ -21,7 +22,7 @@
         <a href="#footer">푸터 영역 바로가기</a>
     </div>
     <!-- //skip -->
-
+    
     <header id="header" role="heading">
         <div class="header__inner">
             <div class="header__logo">
@@ -467,8 +468,33 @@
             </div>
         </div>
     </footer>
+</div>
     <!-- //footer -->
-
+    
     <script type="module" src="assets/js/main.js"></script>
+
+    <script>
+       window.addEventListener('load', function() {
+      setTimeout(function() {
+        document.querySelector('.loader').classList.add('hiddens');
+        document.getElementById('contents').style.display = 'block';
+      }, 3000); 
+    });
+      </script>
+      <!-- //로딩화면 구현-->
+      
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const logo = document.querySelector('.header__logo'); // 여기에 로고의 클래스명을 넣어주세요
+    
+            logo.addEventListener('click', function() {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <!-- //로고 클릭시 페이지 상단 스크롤 -->
 </body>
 </html>

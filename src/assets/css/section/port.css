@@ -31,7 +31,7 @@
 }
 .port__item {
     width: 500px;
-    height: 70vh;
+    height: 73vh;
     background-color: var(--subBg100);
     padding: 2.5rem;
     margin-right: 20px;
@@ -72,7 +72,7 @@
 }
 .port__item .img {
     display: block;
-    margin-top: -20px;
+    margin-top: -10px;
     transition: margin-top 0.3s;
 }
 .port__item:hover .img {
