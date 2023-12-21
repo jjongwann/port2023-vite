@@ -31,20 +31,16 @@
     left: 0;
 }
 .site__item.s1 {
-    background-color: var(--subBg100);
+    background-color: #A9A9A9;
     top: 180px;
 }
 .site__item.s2 {
-    background-color: var(--subBg200);
+    background-color: #D8D8F5;
     top: 200px;
 }
 .site__item.s3 {
-    background-color: var(--subBg300);
+    background-color: #F0DAF0;
     top: 220px;
-}
-.site__item.s4 {
-    background-color: var(--subBg400);
-    top: 240px;
 }
 .site__item .num {
     font-size: 5vw;
